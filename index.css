@@ -43,4 +43,12 @@ html {
     background: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    /* Sets the transformation origin point of the .hand element to the top-right corner (100%) relative to its dimensions. */
+    transform: rotate(90deg);
+    /* Applies a 90-degree rotation to the .hand element, turning it into a horizontal line. */
+    transition: all 0.05s;
+    /* Defines a smooth transition for all properties of the .hand element, with a duration of 0.05 seconds. This creates a smooth animation effect when changes in properties occur. */
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /* Sets the timing function of the transition to a custom cubic bezier. This affects how the animation transition will occur, altering the acceleration and deceleration. */
   }
